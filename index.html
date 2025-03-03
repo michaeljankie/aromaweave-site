@@ -4,31 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AromaWeave® Technology</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Basic styling for the footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>AromaWeave® Technology</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>AromaWeave® stickers are engineered using premium cotton-rayon fiber, a material that integrates advanced scientific principles with the inherent properties of natural cellulose. This page provides a detailed examination of the material composition of these stickers, focusing on the scientific basis for their construction and performance. Designed for optimal functionality, the cotton-rayon fiber blend exemplifies a synergy between natural luxury and cutting-edge material science.</p>
-        </section>
-        <section>
-            <h2>Material Composition: Premium Cotton-Rayon Fiber</h2>
-            <h3>What is Cotton-Rayon Fiber?</h3>
-            <p>The stickers are crafted from a hybrid fiber composed of natural cotton and rayon, a regenerated cellulose material. This combination is deliberately selected to exploit the complementary attributes of each component:</p>
-            <ul>
-                <li><strong>Cotton:</strong> A natural polymer consisting of β-1,4-linked D-glucose units, cotton forms long, linear cellulose chains. These chains contribute to the fiber’s breathability, softness, and structural flexibility.</li>
-                <li><strong>Rayon:</strong> Derived from wood pulp via the viscose process, rayon is a semi-synthetic fiber with a semi-crystalline structure. It enhances the blend’s durability, smoothness, and capacity for liquid retention.</li>
-                <li><strong>Blend Characteristics:</strong> The cotton-rayon fiber in AromaWeave® stickers is formulated with a precise ratio to achieve a balance of strength, porosity, and absorbency. This creates a matrix ideally suited for retaining and releasing compounds, such as essential oils, with scientific precision.</li>
-            </ul>
-        </section>
-    </main>
+    <!-- Main content can go here -->
+    <h1>Welcome to AromaWeave® Technology</h1>
+    <p>This is a sample page showcasing AromaWeave® technology.</p>
+
+    <!-- Footer with Auto-Updating Year and Link to natpat.com -->
     <footer>
-        <p>&copy; 2025 AromaWeave® Technology. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> AromaWeave® Technology. All rights reserved.</p>
+        <p>Learn more about our technology at <a href="https://www.natpat.com" target="_blank">natpat.com</a>, a proud user of AromaWeave® technology.</p>
     </footer>
-    <script src="js/script.js"></script>
+
+    <!-- JavaScript to Auto-Update the Year -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearElement = document.getElementById('year');
+            const currentYear = new Date().getFullYear();
+            yearElement.textContent = currentYear;
+        });
+    </script>
 </body>
 </html>
